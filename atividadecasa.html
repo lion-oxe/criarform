@@ -14,22 +14,34 @@
 <p>Preencha os campos abaixo para registrar seu interesse nos serviços da nossa empresa.</p>
 
 <form action="teste">
- <fieldset>
+
+<fieldset>
     <legend>Informações Pessoais</legend>
-  <p>
-    <label for="nome">Nome completo:</label>
-    <input type="text" id="nomecompleto" name="nomec" size="30" placeholder="Digite seu nome" required>
-    <label for="nome">Nome social (opcional):</label>
-    <input type="text" id="nomesocial" name="nomes" size="30" placeholder="Digite seu nome social">
+        <p>
+            <label for="nomecompleto">Nome completo:</label>
+            <input type="text" id="nomecompleto" name="nomec" size="30" placeholder="Digite seu nome" required>
+            <label for="nomesocial">Nome social (opcional):</label>
+            <input type="text" id="nomesocial" name="nomes" size="30" placeholder="Digite seu nome social">
+            <label for="dn">Data de nascimento:</label>
+            <input type="date" id="dn" name="nomes" size="8">
+            <label for="senha">Crie uma senha:</label>
+            <input type="text" id="senha" name="senha" size="30" placeholder="***********">
+  </p>
+</fieldset>
+
+ <fieldset>
+    <legend>Contato e Localização</legend>
+<p>
     <label for="cidade">Cidade:</label>
     <input type="text" id="cidade" name="cidade" size="30" placeholder="Digite sua cidade" required>
+
     <label for="email">E-mail:</label>
     <input type="text" id="email" name="email" size="30" placeholder="email@email.com" required>
     <label for="zap">Telefone:</label>
     <input type="text" id="tel" name="tel" size="30" placeholder="(XX) 9XXXX-XXXX" required>
-  </p>
- </fieldset>
-<hr>
+</p>
+</fieldset>
+
 
 <p>Você é destro ou canhoto?</p>
   <input type="radio" id="destro" name="mao">
