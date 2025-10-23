@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+</head>
+<body style="display:flex; justify-content:center; align-items:center; height: 100vh; margin: 0;background-color: rgb(206, 206, 206);">
+
+<div style="background-color: rgb(101, 219, 255);width:400px;height:min-content;border: 2px solid rgb(255, 71, 224); padding:20px;">
+
+<h3>Cadastro de Cliente</h3>
+
+<p>Preencha os campos abaixo para registrar seu interesse nos serviços da nossa empresa.</p>
+
+<form action="teste">
+ <fieldset>
+    <legend>Informações Pessoais</legend>
+  <p>
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nomecompleto" name="nomec" size="30" placeholder="Digite seu nome" required>
+    <label for="nome">Nome social (opcional):</label>
+    <input type="text" id="nomesocial" name="nomes" size="30" placeholder="Digite seu nome social">
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade" size="30" placeholder="Digite sua cidade" required>
+    <label for="email">E-mail:</label>
+    <input type="text" id="email" name="email" size="30" placeholder="email@email.com" required>
+    <label for="zap">Telefone:</label>
+    <input type="text" id="tel" name="tel" size="30" placeholder="(XX) 9XXXX-XXXX" required>
+  </p>
+ </fieldset>
+<hr>
+
+<p>Você é destro ou canhoto?</p>
+  <input type="radio" id="destro" name="mao">
+  <label for="destro">Destro</label><br>
+  <input type="radio" id="canhoto" name="mao">
+  <label for="canhoto">Canhoto</label><br>
+  <input type="radio" id="ambidestro" name="mao">
+  <label for="ambidestro">Ambidestro</label>
+
+<br><br>
+<hr>
+
+<p>Quais cores abaixo você gosta?</p>
+  <input type="checkbox" id="roxo" name="cores">
+  <label for="roxo">Roxo</label><br>
+  <input type="checkbox" id="amarelo" name="cores">
+  <label for="amarelo">Amarelo</label><br>
+  <input type="checkbox" id="cinza" name="cores">
+  <label for="cinza">Cinza</label>
+
+<br><br>
+<hr>
+
+<p><input type="submit" value="Enviar"> | <input type="reset" value="Apagar"></p>
+
+</form>
+</div>
+
+</body>
+</html>
 
