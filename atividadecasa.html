@@ -6,7 +6,7 @@
     <title>Cadastro de Cliente</title>
 </head>
 
-/* Leonardo Farias Pessoa Tenório */
+<!-- Leonardo Farias Pessoa Tenório -->
 
 <body style="display:flex; justify-content:center; align-items:center; height: 100vh; margin: 0;background-color: rgb(206, 206, 206);">
 
@@ -21,7 +21,7 @@
 <fieldset>
   <legend>Informações Pessoais</legend>
    <p>
-    <label for="nomecompleto">Nome completo:</label>
+     <label for="nomecompleto">Nome completo:</label>
      <input type="text" id="nomecompleto" name="nomec" size="30" placeholder="Digite seu nome" required>
      <label for="nomesocial">Nome social (opcional):</label>
      <input type="text" id="nomesocial" name="nomes" size="30" placeholder="Digite seu nome social">
@@ -29,8 +29,10 @@
      <input type="date" id="dn" name="nomes" size="8">
      <label for="senha">Crie uma senha:</label>
      <input type="password" id="senha" name="senha" size="30" placeholder="***********">
-  </p>
+   </p>
 </fieldset>
+
+<br><br>
 
 <fieldset>
  <legend>Contato e Localização</legend>
@@ -38,43 +40,44 @@
     <label for="cidade">Cidade:</label>
     <input type="text" id="cidade" name="cidade" size="30" placeholder="Digite sua cidade" required>
     <label for="estado">Estado:</label>
-    <input list="estado" id="estado" name="estado">
-     <select name="estado" id="estado">
+    <input list="Estado" id="estado" name="estado" required>
+     <select name="Estado" id="Estado">
       <option value="ac">Acre</option>
       <option value="al">Alagoas</option>
-      <option value="">Amapá</option>
-      <option value="">Amazonas</option>
-      <option value="">Bahia</option>
-      <option value="">Ceará</option>
-      <option value="">Distrito Federal</option>
-      <option value="">Espírito Santo</option>
-      <option value="">Goiás</option>
-      <option value="">Maranhão</option>
-      <option value="">Mato Grosso</option>
-      <option value="">Mato Grosso do Sul</option>
-      <option value="">Minas Gerais</option>
-      <option value="">Pará</option>
-      <option value="">Paraíba</option>
-      <option value="">Paraná</option>
-      <option value="">Pernambuco</option>
-      <option value="">Piauí</option>
-      <option value="">Rio de Janeiro</option>
-      <option value="">Rio Grande do Norte</option>
-      <option value="">Rio Grande do Sul</option>
-      <option value="">Rondônia</option>
-      <option value="">Roraima</option>
-      <option value="">Santa Catarina</option>
-      <option value="">São Paulo</option>
-      <option value="">Sergipe</option>
-      <option value="">Tocantins</option>
+      <option value="ap">Amapá</option>
+      <option value="am">Amazonas</option>
+      <option value="ba">Bahia</option>
+      <option value="ce">Ceará</option>
+      <option value="df">Distrito Federal</option>
+      <option value="es">Espírito Santo</option>
+      <option value="go">Goiás</option>
+      <option value="ma">Maranhão</option>
+      <option value="mt">Mato Grosso</option>
+      <option value="ms">Mato Grosso do Sul</option>
+      <option value="mg">Minas Gerais</option>
+      <option value="pa">Pará</option>
+      <option value="pb">Paraíba</option>
+      <option value="pr">Paraná</option>
+      <option value="pe">Pernambuco</option>
+      <option value="pi">Piauí</option>
+      <option value="rj">Rio de Janeiro</option>
+      <option value="rn">Rio Grande do Norte</option>
+      <option value="rs">Rio Grande do Sul</option>
+      <option value="ro">Rondônia</option>
+      <option value="rr">Roraima</option>
+      <option value="sc">Santa Catarina</option>
+      <option value="sp">São Paulo</option>
+      <option value="se">Sergipe</option>
+      <option value="to">Tocantins</option>
      </select>
     <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" size="30" placeholder="email@email.com" required>
-    <label for="zap">Telefone:</label>
+    <input type="email" id="email" name="email" size="30" placeholder="email@exemplo.com" required>
+    <label for="tel">Telefone:</label>
     <input type="tel" id="tel" name="tel" size="30" placeholder="(XX) 9XXXX-XXXX" required>
  </p>
 </fieldset>
 
+<hr>
 
 <p>Você é destro ou canhoto?</p>
   <input type="radio" id="destro" name="mao">
