@@ -8,9 +8,9 @@
 
 <!-- Leonardo Farias Pessoa Tenório -->
 
-<body style="display:flex; justify-content:center; align-items:center; height: 100vh; margin: 0;background-color: rgb(206, 206, 206);">
+<body style="display:flex; justify-content:center; align-items:center; height:100vh; margin: 0;background-color: rgb(206, 206, 206);">
 
-<div style="background-color: rgb(101, 219, 255);width:90%;height:min-content;border: 2px solid rgb(255, 71, 224); padding:20px;">
+<div style="background-color: rgb(101, 219, 255);width:auto;height:min-content;border: 2px solid rgb(255, 71, 224); padding:20px;font-family: Arial, Helvetica, sans-serif;">
 
 <h3>Cadastro de Cliente</h3>
 
@@ -32,16 +32,15 @@
    </p>
 </fieldset>
 
-<br><br>
+<br>
 
 <fieldset>
  <legend>Contato e Localização</legend>
   <p>
     <label for="cidade">Cidade:</label>
-    <input type="text" id="cidade" name="cidade" size="30" placeholder="Digite sua cidade" required>
-    <label for="estado">Estado:</label>
-    <input list="Estado" id="estado" name="estado" required>
-     <select name="Estado" id="Estado">
+    <input type="text" id="cidade" name="cidade" size="20" placeholder="Digite sua cidade" required>
+    <label for="Estado">Estado:</label>
+     <select name="Estado" id="Estado" placeholder="Selecione seu estado" size="20" required>
       <option value="ac">Acre</option>
       <option value="al">Alagoas</option>
       <option value="ap">Amapá</option>
