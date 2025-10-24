@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Cliente</title>
+    <style>
+     .fs {
+        border-radius:10px;
+        border:2px solid #FFFFFF;
+        }
+    </style>
 </head>
 
 <!-- Leonardo Farias Pessoa Tenório -->
 
-<body style="display:flex; justify-content:center; align-items:center; height:100vh; margin: 0;background-color: rgb(206, 206, 206);">
+<body style="display:flex; justify-content:center; align-items:center; height:100vh; margin: 0;background-color:#000000;">
 
-<div style="background-color: rgb(101, 219, 255);width:auto;height:min-content;border: 2px solid rgb(255, 71, 224); padding:20px;font-family: Arial, Helvetica, sans-serif;">
+<div style="background-color:#f1f1f1;width:min-content; height:min-content;border:0px; border-radius: 10px; padding:20px;font-family: Arial, Helvetica, sans-serif;">
 
 <h3>Cadastro de Cliente</h3>
 
@@ -18,7 +24,7 @@
 
 <form action="teste">
 
-<fieldset>
+<fieldset class="fs">
   <legend>Informações Pessoais</legend>
    <p>
      <label for="nomecompleto">Nome completo:</label>
@@ -34,7 +40,7 @@
 
 <br>
 
-<fieldset>
+<fieldset class="fs">
  <legend>Contato e Localização</legend>
   <p>
     <label for="cidade">Cidade:</label>
@@ -78,29 +84,36 @@
 
 <hr>
 
-<p>Você é destro ou canhoto?</p>
-  <input type="radio" id="destro" name="mao">
-  <label for="destro">Destro</label><br>
-  <input type="radio" id="canhoto" name="mao">
-  <label for="canhoto">Canhoto</label><br>
-  <input type="radio" id="ambidestro" name="mao">
-  <label for="ambidestro">Ambidestro</label>
+<fieldset class="fs">
+  <legend>Preferências de serviços</legend>
+    <p>Deseja receber novidades por e-mail?</p>
+  <p><input type="radio" id="nao" name="novidades">
+  <label for="nao">Não</label>
+  <input type="radio" id="sim" name="novidades">
+  <label for="sim">Sim</label></p>
 
-<br><br>
-<hr>
+<br>
 
-<p>Quais cores abaixo você gosta?</p>
-  <input type="checkbox" id="roxo" name="cores">
-  <label for="roxo">Roxo</label><br>
-  <input type="checkbox" id="amarelo" name="cores">
-  <label for="amarelo">Amarelo</label><br>
-  <input type="checkbox" id="cinza" name="cores">
-  <label for="cinza">Cinza</label>
+<p>Selecione os serviços de interesse:</p>
+  <input type="checkbox" id="desw" name="servicos">
+  <label for="desw">Desenvolvimento Web</label><br>
+  <input type="checkbox" id="desd" name="servicos">
+  <label for="desd">Design Digital</label><br>
+  <input type="checkbox" id="redc" name="servicos">
+  <label for="redc">Rede de Computadores</label>
 
-<br><br>
-<hr>
+<br>
 
-<p><input type="submit" value="Enviar"> | <input type="reset" value="Apagar"></p>
+</fieldset>
+
+<fieldset class="fs">
+  <legend>Comentários</legend>
+  <label for="mensagem">Deixe uma mensagem (opcional):</label><br>
+  <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite suas observações ..." maxlength="300" required></textarea>
+<br>
+</fieldset>
+
+<p><input type="submit" value="Enviar Cadastro"> | <input type="reset" value="Limpar"></p>
 
 </form>
 </div>
