@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Cliente</title>
     <style>
-     .fs {
-        border-radius:10px;
-        border:2px solid #FFFFFF;
-        }
+    fieldset {
+     border: 2px solid #3d85c6;
+     border-radius:10px;
+     padding: 10px;
+    }
         
     p {
       text-align:center;
@@ -16,7 +17,14 @@
     </style>
 </head>
 
-<!-- Leonardo Farias Pessoa Tenório -->
+<!-- 
+	Estudante: Leonardo Farias Pessoa Tenório 
+  Curso: Téc. Desenvolvimento de Sistemas
+  Turma: TEC 206.030
+  Unidade Curricular: Desenvolvimento de Sistemas 1
+  Professor: Lucas Primo
+  Data: 23/10/2025
+-->
 
 <body style="display:flex; justify-content:center; align-items:center; height:100vh; margin: 0;background-color:#000000;">
 
@@ -28,7 +36,7 @@
 
 <form action="teste">
 
-<fieldset class="fs">
+<fieldset>
   <legend>Informações Pessoais</legend>
      <label for="nomecompleto">Nome completo:</label>
      <input type="text" id="nomecompleto" name="nomec" size="30" placeholder="Digite seu nome" required><br>
@@ -42,7 +50,7 @@
 
 <br>
 
-<fieldset class="fs">
+<fieldset>
  <legend>Contato e Localização</legend>
     <label for="cidade">Cidade:</label>
     <input type="text" id="cidade" name="cidade" size="20" placeholder="Digite sua cidade" required><br>
@@ -84,15 +92,13 @@
 
 <br>
 
-<fieldset class="fs">
+<fieldset>
   <legend>Preferências de serviços</legend>
     <p>Deseja receber novidades por e-mail?</p>
   <p><input type="radio" id="nao" name="novidades">
   <label for="nao">Não</label>
   <input type="radio" id="sim" name="novidades">
   <label for="sim">Sim</label></p>
-
-<br>
 
 <p>Selecione os serviços de interesse:</p>
   <input type="checkbox" id="desw" name="servicos">
@@ -106,7 +112,7 @@
 
 </fieldset>
 
-<fieldset class="fs">
+<fieldset>
   <legend>Comentários</legend>
   <label for="mensagem">Deixe uma mensagem (opcional):</label><br>
   <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite suas observações ..." maxlength="300" required></textarea>
