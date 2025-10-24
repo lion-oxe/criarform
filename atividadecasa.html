@@ -9,6 +9,10 @@
         border-radius:10px;
         border:2px solid #FFFFFF;
         }
+        
+    p {
+      text-align:center;
+    }
     </style>
 </head>
 
@@ -26,25 +30,22 @@
 
 <fieldset class="fs">
   <legend>Informações Pessoais</legend>
-   <p>
      <label for="nomecompleto">Nome completo:</label>
-     <input type="text" id="nomecompleto" name="nomec" size="30" placeholder="Digite seu nome" required>
+     <input type="text" id="nomecompleto" name="nomec" size="30" placeholder="Digite seu nome" required><br>
      <label for="nomesocial">Nome social (opcional):</label>
-     <input type="text" id="nomesocial" name="nomes" size="30" placeholder="Digite seu nome social">
+     <input type="text" id="nomesocial" name="nomes" size="30" placeholder="Digite seu nome social"><br>
      <label for="dn">Data de nascimento:</label>
-     <input type="date" id="dn" name="nomes" size="8">
+     <input type="date" id="dn" name="nomes" size="8"><br>
      <label for="senha">Crie uma senha:</label>
      <input type="password" id="senha" name="senha" size="30" placeholder="***********">
-   </p>
 </fieldset>
 
 <br>
 
 <fieldset class="fs">
  <legend>Contato e Localização</legend>
-  <p>
     <label for="cidade">Cidade:</label>
-    <input type="text" id="cidade" name="cidade" size="20" placeholder="Digite sua cidade" required>
+    <input type="text" id="cidade" name="cidade" size="20" placeholder="Digite sua cidade" required><br>
     <label for="Estado">Estado:</label>
      <select name="Estado" id="Estado" placeholder="Selecione seu estado" size="20" required>
       <option value="ac">Acre</option>
@@ -74,15 +75,14 @@
       <option value="sp">São Paulo</option>
       <option value="se">Sergipe</option>
       <option value="to">Tocantins</option>
-     </select>
+     </select><br>
     <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" size="30" placeholder="email@exemplo.com" required>
+    <input type="email" id="email" name="email" size="30" placeholder="email@exemplo.com" required><br>
     <label for="tel">Telefone:</label>
     <input type="tel" id="tel" name="tel" size="30" placeholder="(XX) 9XXXX-XXXX" required>
- </p>
 </fieldset>
 
-<hr>
+<br>
 
 <fieldset class="fs">
   <legend>Preferências de serviços</legend>
@@ -113,7 +113,7 @@
 <br>
 </fieldset>
 
-<p><input type="submit" value="Enviar Cadastro"> | <input type="reset" value="Limpar"></p>
+<p><input type="submit" value="Enviar Cadastro"> <input type="reset" value="Limpar"></p>
 
 </form>
 </div>
