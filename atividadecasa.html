@@ -6,7 +6,7 @@
     <title>Cadastro de Cliente</title>
     <style>
     fieldset {
-     border: 2px solid #3d85c6;
+     border: 2px solid black;
      border-radius:10px;
      padding: 10px;
     }
@@ -17,14 +17,7 @@
     </style>
 </head>
 
-<!-- 
-	Estudante: Leonardo Farias Pessoa Tenório 
-  Curso: Téc. Desenvolvimento de Sistemas
-  Turma: TEC 206.030
-  Unidade Curricular: Desenvolvimento de Sistemas 1
-  Professor: Lucas Primo
-  Data: 23/10/2025
--->
+<!-- Leonardo Farias Pessoa Tenório -->
 
 <body style="display:flex; justify-content:center; align-items:center; height:100vh; margin: 0;background-color:#000000;">
 
@@ -41,7 +34,7 @@
      <label for="nomecompleto">Nome completo:</label>
      <input type="text" id="nomecompleto" name="nomec" size="30" placeholder="Digite seu nome" required><br>
      <label for="nomesocial">Nome social (opcional):</label>
-     <input type="text" id="nomesocial" name="nomes" size="30" placeholder="Digite seu nome social"><br>
+     <input type="text" id="nomesocial" name="nomes" size="15" placeholder="Seu nome social"><br>
      <label for="dn">Data de nascimento:</label>
      <input type="date" id="dn" name="nomes" size="8"><br>
      <label for="senha">Crie uma senha:</label>
@@ -94,13 +87,13 @@
 
 <fieldset>
   <legend>Preferências de serviços</legend>
-    <p>Deseja receber novidades por e-mail?</p>
-  <p><input type="radio" id="nao" name="novidades">
+    <p style="text-align:left">Deseja receber novidades por e-mail?
+  <input type="radio" id="nao" name="novidades">
   <label for="nao">Não</label>
   <input type="radio" id="sim" name="novidades">
   <label for="sim">Sim</label></p>
 
-<p>Selecione os serviços de interesse:</p>
+<p style="text-align:left">Selecione os serviços de interesse:</p>
   <input type="checkbox" id="desw" name="servicos">
   <label for="desw">Desenvolvimento Web</label><br>
   <input type="checkbox" id="desd" name="servicos">
@@ -111,6 +104,8 @@
 <br>
 
 </fieldset>
+
+<br>
 
 <fieldset>
   <legend>Comentários</legend>
