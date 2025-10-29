@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <style>
+    fieldset {
+     border: 2px solid black;
+     border-radius:10px;
+     padding: 10px;
+    }
+        
+    p {
+      text-align:center;
+    }
+    </style>
+</head>
+
+<!-- Leonardo Farias Pessoa Tenório -->
+
+<body style="display:flex; justify-content:center; align-items:center; height:80%; margin:auto 0; margin-top:20px; margin-bottom:20px; background-color:#747474;">
+
+<div style="background-color:#f1f1f1;width:min-content; height:min-content;border:0px; border-radius: 10px; padding:20px;font-family: Arial, Helvetica, sans-serif;">
+
+<h3>Cadastro de Cliente</h3>
+
+<p>Preencha os campos abaixo para registrar seu interesse nos serviços da nossa empresa.</p>
+
+<form action="teste">
+
+<fieldset>
+  <legend>Informações Pessoais</legend>
+     <label for="nomecompleto">Nome completo:</label>
+     <input type="text" id="nomecompleto" name="nomec" size="30" placeholder="Digite seu nome" required><br>
+     <label for="nomesocial">Nome social (opcional):</label>
+     <input type="text" id="nomesocial" name="nomes" size="15" placeholder="Seu nome social"><br>
+     <label for="dn">Data de nascimento:</label>
+     <input type="date" id="dn" name="nomes" size="8"><br>
+     <label for="senha">Crie uma senha:</label>
+     <input type="password" id="senha" name="senha" size="30" placeholder="***********">
+</fieldset>
+
+<br>
+
+<fieldset>
+ <legend>Contato e Localização</legend>
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade" size="20" placeholder="Digite sua cidade" required><br>
+    <label for="Estado">Estado:</label>
+     <select name="Estado" id="estd" placeholder="Selecione seu estado" style="overflow:hidden;">
+      <option value="ac">Acre</option>
+      <option value="al">Alagoas</option>
+      <option value="ap">Amapá</option>
+      <option value="am">Amazonas</option>
+      <option value="ba">Bahia</option>
+      <option value="ce">Ceará</option>
+      <option value="df">Distrito Federal</option>
+      <option value="es">Espírito Santo</option>
+      <option value="go">Goiás</option>
+      <option value="ma">Maranhão</option>
+      <option value="mt">Mato Grosso</option>
+      <option value="ms">Mato Grosso do Sul</option>
+      <option value="mg">Minas Gerais</option>
+      <option value="pa">Pará</option>
+      <option value="pb">Paraíba</option>
+      <option value="pr">Paraná</option>
+      <option value="pe">Pernambuco</option>
+      <option value="pi">Piauí</option>
+      <option value="rj">Rio de Janeiro</option>
+      <option value="rn">Rio Grande do Norte</option>
+      <option value="rs">Rio Grande do Sul</option>
+      <option value="ro">Rondônia</option>
+      <option value="rr">Roraima</option>
+      <option value="sc">Santa Catarina</option>
+      <option value="sp">São Paulo</option>
+      <option value="se">Sergipe</option>
+      <option value="to">Tocantins</option>
+     </select><br>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" size="30" placeholder="email@exemplo.com" required><br>
+    <label for="tel">Telefone:</label>
+    <input type="tel" id="tel" name="tel" size="30" placeholder="(XX) 9XXXX-XXXX" required>
+</fieldset>
+
+<br>
+
+<fieldset>
+  <legend>Preferências de serviços</legend>
+    <p style="text-align:left">Deseja receber novidades por e-mail?
+  <input type="radio" id="nao" name="novidades">
+  <label for="nao">Não</label>
+  <input type="radio" id="sim" name="novidades">
+  <label for="sim">Sim</label></p>
+
+<p style="text-align:left">Selecione os serviços de interesse:</p>
+  <input type="checkbox" id="desw" name="servicos">
+  <label for="desw">Desenvolvimento Web</label><br>
+  <input type="checkbox" id="desd" name="servicos">
+  <label for="desd">Design Digital</label><br>
+  <input type="checkbox" id="redc" name="servicos">
+  <label for="redc">Rede de Computadores</label>
+
+<br>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+  <legend>Comentários</legend>
+  <label for="mensagem">Deixe uma mensagem (opcional):</label><br>
+  <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite suas observações ..." maxlength="300" required></textarea>
+<br>
+</fieldset>
+
+<p><input type="submit" value="Enviar Cadastro"> <input type="reset" value="Limpar"></p>
+
+</form>
+</div>
+
+</body>
+</html>
